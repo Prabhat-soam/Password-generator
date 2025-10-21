@@ -3,12 +3,13 @@
 <head>
   <title>Password Generator</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-  <h1>Random Password Generator</h1>
+  <h1><i class="fas fa-lock"></i>Random Password Generator</h1>
 
-  <label for="length">Password Length:</label>
+  <label for="length"><i class="fas fa-key"></i>Password Length:</label>
   <input type="number" id="length" value="12" min="4" max="50"><br>
 
   <input type="checkbox" id="uppercase" checked class="checkbox"> Include Uppercase<br>
@@ -16,7 +17,7 @@
   <input type="checkbox" id="numbers" checked class="checkbox"> Include Numbers<br>
   <input type="checkbox" id="symbols" checked class="checkbox"> Include Symbols<br>
 
-  <button onclick="generatePassword()" class="passwordbtn">Generate Password</button>
+  <button onclick="generatePassword()" class="passwordbtn"> <i class="fas fa-magic"></i>Generate Password</button>
 
   <h2 id="result">Your Password Will Appear Here</h2>
 
